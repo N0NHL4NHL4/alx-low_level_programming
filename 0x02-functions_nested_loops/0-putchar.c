@@ -1,11 +1,14 @@
-#include <stdio.h>
+#include "main.h"
 /**
-  * main - prints the string putchar
+  * main - print _putchar
   *
   * Return: always (0)
   */
 int main(void)
 {
-	printf("_putchar\n");
+	char c;
+
+	for (c = '_putchar')
+	_putchar("_putchar");
 	return (0);
 }
