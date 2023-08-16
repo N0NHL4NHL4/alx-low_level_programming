@@ -8,10 +8,11 @@ void print_alphabet(void)
 {
 	char al;
 
-	for (al = 'a'; al <= 'z'; al++)
+	al = 'a';
+	while (al <= 'z')
 	{
 		_putchar(al);
+		al++;
 	}
-		_putchar("\n");
-	return (0);
+	_putchar('\n');
 }
