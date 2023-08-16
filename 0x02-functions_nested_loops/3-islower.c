@@ -2,9 +2,9 @@
 /**
   * _islower - detects lowercase and uppercase
   *
-  * Description: ese _putchar to print
+  * Description: use _putchar to print
   *
-  * Return: (1) if c is lower otherwise (0)
+  * Return: (1) if c is lowercase otherwise (0)
   *
   */
 int _islower(int c)
@@ -14,7 +14,10 @@ int _islower(int c)
 
 	for (i = 'a'; i <= 'z'; i++)
 	{
-	lower = 1;
+		if (i == c)
+		{
+		lower = 1;
+		}
 	}
 	return (lower);
 }
