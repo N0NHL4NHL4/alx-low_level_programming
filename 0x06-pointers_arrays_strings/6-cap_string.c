@@ -13,7 +13,6 @@ char *cap_string(char *str)
 	while (str[indx])
 	{
 		while (!(str[indx] >= 'a' && str[indx] <= 'z'))
-		{
 			indx++;
 
 			if (str[indx - 1] == ' ' ||
@@ -32,7 +31,6 @@ char *cap_string(char *str)
 			indx == 0)
 				str[indx] -= 32;
 			indx++;
-		}
 	}
 	return (str);
 }
